@@ -9,6 +9,13 @@ and open the template in the editor.
 */
 @import "constraint.scss";
 
+#button{
+    border-radius: 25px;
+    background: $bc;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+}
 .score{
-    color: $bg;
+   background: $bc;
 }

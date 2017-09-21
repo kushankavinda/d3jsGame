@@ -1,5 +1,5 @@
-var groundDiv = document.getElementById("playGround");
-var score=0;
+var groundDiv = document.getElementById(".playGround");
+var score = 0;
 var rSize = [11, 22, 33];
 var canvas = d3.select(".playGround")
         .append("svg")
@@ -32,10 +32,16 @@ var c, b;
 function timeThread() {
     b = new Date();
     c = b.getTime();
-    if((c-n)<2000){
+    if ((c - n) < 2000) {
+        scoreShow(10);
         nextCircle();
-    }else{
+    } else {
         alert("Time passed");
     }
 }
+function scoreShow(){
+    score=score+10;
+    document.getElementById("current_Score").innerHTML=score;
+}
+
 
